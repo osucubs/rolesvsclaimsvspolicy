@@ -9,12 +9,21 @@ namespace Claims.Controllers
         public IActionResult Index() => View();
 
         [Authorize(Policy = "WorkedTwoYears")]
-        public IActionResult TwoYearRewards() => View();
+        public IActionResult TwoYearRewards()
+        {
+            return View();
+        }
 
         [Authorize(Policy = "WorkedFiveYears")]
-        public IActionResult FiveYearRewards() => View();
+        public IActionResult FiveYearRewards()
+        {
+            return View();
+        }
 
         [Authorize(Policy = "WorkedTenYears")]
-        public IActionResult TenYearRewards() => View();
+        public IActionResult TenYearRewards()
+        {
+            return View();
+        }
     }
 }
