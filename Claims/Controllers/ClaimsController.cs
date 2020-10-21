@@ -8,12 +8,21 @@ namespace Claims.Controllers
         public IActionResult Index() => View();
 
         [YearsWorked(2)]
-        public IActionResult TwoYearRewards() => View();
+        public IActionResult TwoYearRewards()
+        {
+            return View();
+        }
 
         [YearsWorked(5)]
-        public IActionResult FiveYearRewards() => View();
+        public IActionResult FiveYearRewards()
+        {
+            return View();
+        }
 
         [YearsWorked(10)]
-        public IActionResult TenYearRewards() => View();
+        public IActionResult TenYearRewards()
+        {
+            return View();
+        }
     }
 }
