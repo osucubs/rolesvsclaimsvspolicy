@@ -8,12 +8,21 @@ namespace Roles.Controllers
         public IActionResult Index() => View();
 
         [Authorize(Policy = "UserAccess")]
-        public IActionResult UserPage() => View();
+        public IActionResult UserPage()
+        {
+            return View();
+        }
 
         [Authorize(Policy = "ManagerAccess")]
-        public IActionResult ManagerPage() => View();
+        public IActionResult ManagerPage()
+        {
+            return View();
+        }
 
         [Authorize(Policy = "AdminAccess")]
-        public IActionResult AdminPage() => View();
+        public IActionResult AdminPage()
+        {
+            return View();
+        }
     }
 }
